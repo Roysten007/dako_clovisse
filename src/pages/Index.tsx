@@ -1,6 +1,7 @@
 import CustomCursor from "@/components/CustomCursor";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import Services from "@/components/Services";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Tools from "@/components/Tools";
@@ -16,6 +17,7 @@ const Index = () => (
     <Navbar />
     <Hero />
     <About />
+    <Services />
     <Skills />
     <Tools />
     <Projects />

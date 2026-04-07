@@ -18,9 +18,9 @@ const Footer = () => (
 
       <div className="flex justify-center gap-3">
         {[
-          { href: "https://linkedin.com", label: "Li" },
-          { href: "https://twitter.com", label: "X" },
-          { href: "https://wa.me/", label: "Wa" },
+          { href: "https://www.linkedin.com/in/clovisse-dako-wegbe-a3b225401?utm_source=share_via&utm_content=profile&utm_medium=member_android", label: "Li" },
+          { href: "https://www.facebook.com/profile.php?id=61579292697877", label: "Fb" },
+          { href: "https://wa.me/22955836540", label: "Wa" },
         ].map((s) => (
           <a
             key={s.label}

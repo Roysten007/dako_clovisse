@@ -18,7 +18,7 @@ const Vision = () => (
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
         {pillars.map((p, i) => (
           <ScrollReveal key={i} delay={i * 0.1}>
-            <div className="p-5 rounded-lg bg-background/50 border border-border hover:border-primary transition-all duration-300 hover:-translate-y-1 text-center h-full">
+            <div className="p-5 rounded-lg bg-background/50 border border-border hover:border-primary transition-all duration-300 hover:-translate-y-1 text-center h-full hover:shadow-[0_0_30px_-10px_rgba(255,180,0,0.4)]">
               <p.icon className="w-10 h-10 text-primary mx-auto mb-3" />
               <h3 className="font-body font-semibold text-foreground text-sm mb-2">{p.title}</h3>
               <p className="text-xs text-text-secondary font-body leading-relaxed">{p.desc}</p>

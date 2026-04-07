@@ -35,36 +35,39 @@ const Contact = () => {
           {/* Form */}
           <ScrollReveal>
             {submitted ? (
-              <div className="p-8 rounded-xl bg-card border border-primary/30 text-center">
-                <p className="text-primary font-body font-semibold text-lg">Message envoyé !</p>
-                <p className="text-text-secondary font-body text-sm mt-2">Je vous répondrai dès que possible.</p>
+              <div className="h-full flex items-center justify-center p-8 rounded-xl bg-card border border-primary/30 text-center shadow-[0_0_30px_rgba(255,180,0,0.1)]">
+                <div>
+                  <p className="text-primary font-body font-bold text-xl">Message envoyé !</p>
+                  <p className="text-text-secondary font-body text-sm mt-3">Je vous répondrai très bientôt.</p>
+                </div>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                 <input
                   type="text"
                   name="name"
                   placeholder="Votre nom complet"
                   required
-                  className="w-full px-4 py-3 rounded-lg bg-card border border-border focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary text-foreground font-body text-sm min-h-[44px] transition-colors"
+                  className="w-full h-[72px] px-6 rounded-xl bg-card border border-border focus:border-primary focus:outline-none focus:shadow-[0_0_20px_rgba(255,180,0,0.2)] text-foreground font-body text-sm transition-all"
                 />
                 <input
                   type="email"
                   name="email"
                   placeholder="Votre adresse email"
                   required
-                  className="w-full px-4 py-3 rounded-lg bg-card border border-border focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary text-foreground font-body text-sm min-h-[44px] transition-colors"
+                  className="w-full h-[72px] px-6 rounded-xl bg-card border border-border focus:border-primary focus:outline-none focus:shadow-[0_0_20px_rgba(255,180,0,0.2)] text-foreground font-body text-sm transition-all"
                 />
-                <textarea
-                  name="message"
-                  placeholder="Dites-moi en quoi je peux vous aider..."
-                  rows={5}
-                  required
-                  className="w-full px-4 py-3 rounded-lg bg-card border border-border focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary text-foreground font-body text-sm resize-none transition-colors"
-                />
+                <div className="relative">
+                  <textarea
+                    name="message"
+                    placeholder="Dites-moi en quoi je peux vous aider..."
+                    required
+                    className="w-full h-[72px] px-6 py-6 rounded-xl bg-card border border-border focus:border-primary focus:outline-none focus:shadow-[0_0_20px_rgba(255,180,0,0.2)] text-foreground font-body text-sm resize-none transition-all"
+                  />
+                </div>
                 <button
                   type="submit"
-                  className="w-full py-3 bg-primary text-primary-foreground font-body font-semibold rounded-lg hover:brightness-110 transition-all min-h-[44px] text-sm"
+                  className="w-full h-[72px] bg-primary text-primary-foreground font-body font-bold rounded-xl hover:brightness-110 transition-all text-sm shadow-[0_0_25px_rgba(255,180,0,0.3)] hover:shadow-[0_0_35px_rgba(255,180,0,0.5)]"
                 >
                   Envoyer le message
                 </button>
@@ -74,30 +77,33 @@ const Contact = () => {
 
           {/* Contact info */}
           <ScrollReveal delay={0.2}>
-            <div className="space-y-4">
+            <div className="flex flex-col gap-4">
               {[
                 { label: "LinkedIn", href: "https://linkedin.com", text: "Voir mon profil" },
-                { label: "WhatsApp", href: "https://wa.me/", text: "Me contacter" },
-                { label: "Email", href: "mailto:contact@dako.dev", text: "Envoyer un email" },
+                { label: "WhatsApp", href: "https://wa.me/22955836540", text: "Me contacter" },
+                { label: "Email", href: "mailto:dakowegbe@gmail.com", text: "Envoyer un email" },
               ].map((c, i) => (
                 <a
                   key={i}
                   href={c.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 rounded-lg bg-card border border-border hover:border-primary transition-all group min-h-[44px]"
+                  className="flex items-center gap-5 px-6 h-[72px] rounded-xl bg-card border border-border hover:border-primary transition-all group hover:shadow-[0_0_20px_rgba(255,180,0,0.2)]"
                 >
-                  <div className="w-10 h-10 rounded-md bg-primary/10 flex items-center justify-center shrink-0">
-                    <span className="text-primary font-body font-bold text-xs">{c.label[0]}</span>
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-primary-foreground transition-all">
+                    <span className="font-body font-bold text-xs">{c.label[0]}</span>
                   </div>
                   <div>
-                    <p className="text-sm font-body font-medium text-foreground">{c.label}</p>
-                    <p className="text-xs text-text-secondary">{c.text}</p>
+                    <p className="text-sm font-body font-bold text-foreground">{c.label}</p>
+                    <p className="text-[10px] uppercase tracking-widest text-text-secondary group-hover:text-primary transition-colors">{c.text}</p>
                   </div>
                 </a>
               ))}
-              <div className="p-4 rounded-lg bg-card border border-border">
-                <p className="text-sm font-body text-text-secondary">📍 Bénin 🇧🇯 · INSTI Lokossa</p>
+              <div className="flex items-center gap-5 px-6 h-[72px] rounded-xl bg-card border border-border hover:border-primary transition-all group hover:shadow-[0_0_20px_rgba(255,180,0,0.2)]">
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                  <span className="text-sm">📍</span>
+                </div>
+                <p className="text-sm font-body font-medium text-text-secondary">Bénin 🇧🇯 · INSTI Lokossa</p>
               </div>
             </div>
           </ScrollReveal>

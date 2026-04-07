@@ -47,7 +47,7 @@ const Tools = () => (
       <div className="grid sm:grid-cols-2 gap-5">
         {tools.map((t, i) => (
           <ScrollReveal key={i} delay={i * 0.1}>
-            <div className="group p-6 rounded-xl bg-card border border-border hover:border-primary transition-all duration-300 hover:-translate-y-1 h-full">
+            <div className="group p-6 rounded-xl bg-card border border-border hover:border-primary transition-all duration-300 hover:-translate-y-1 h-full hover:shadow-[0_0_30px_-5px_rgba(255,180,0,0.3)]">
               <div className="w-full h-32 rounded-lg bg-card-elevated flex items-center justify-center mb-4 overflow-hidden">
                 <t.icon className="w-16 h-16 text-primary/40 group-hover:text-primary/60 transition-colors" />
               </div>

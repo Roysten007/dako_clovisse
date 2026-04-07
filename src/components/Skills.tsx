@@ -25,7 +25,7 @@ const Skills = () => (
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {skills.map((s, i) => (
           <ScrollReveal key={i} delay={i * 0.1}>
-            <div className="p-5 rounded-lg bg-card border-l-[3px] border-primary hover:border-l-primary hover:-translate-y-1 transition-all duration-300 h-full">
+            <div className="p-5 rounded-lg bg-card border-l-[3px] border-primary hover:border-l-primary hover:-translate-y-1 transition-all duration-300 h-full hover:shadow-[0_0_20px_-5px_rgba(255,180,0,0.2)]">
               <s.icon className="w-8 h-8 text-primary mb-3" />
               <p className="font-body font-medium text-foreground text-sm mb-3">{s.title}</p>
               <AnimatedProgressBar value={s.value} />

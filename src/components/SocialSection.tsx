@@ -1,9 +1,10 @@
 import ScrollReveal from "./ScrollReveal";
 
 const socials = [
-  { label: "Voir mon profil professionnel", href: "https://linkedin.com", platform: "LinkedIn", filled: false },
-  { label: "Suivre ma progression BTP", href: "https://instagram.com", platform: "Instagram", filled: false },
-  { label: "Me contacter directement", href: "https://wa.me/", platform: "WhatsApp", filled: true },
+  { label: "Voir mon profil professionnel", href: "https://www.linkedin.com/in/clovisse-dako-wegbe-a3b225401?utm_source=share_via&utm_content=profile&utm_medium=member_android", platform: "LinkedIn", filled: false },
+  { label: "Suivre ma progression BTP", href: "https://www.instagram.com/dakowegbeclovissesmith?igsh=bG40emdqOHZrNWFn", platform: "Instagram", filled: false },
+  { label: "Me suivre sur Facebook", href: "https://www.facebook.com/profile.php?id=61579292697877", platform: "Facebook", filled: false },
+  { label: "Me contacter directement", href: "https://wa.me/22955836540", platform: "WhatsApp", filled: true },
 ];
 
 const SocialSection = () => (
@@ -23,7 +24,7 @@ const SocialSection = () => (
               href={s.href}
               target="_blank"
               rel="noopener noreferrer"
-              className={`block w-full py-4 px-6 rounded-lg font-body font-semibold text-sm transition-all duration-300 min-h-[44px] ${
+              className={`block w-full py-4 px-6 rounded-lg font-body font-semibold text-sm transition-all duration-300 min-h-[44px] shadow-[0_5px_15px_rgba(255,180,0,0.1)] hover:shadow-[0_8px_25px_rgba(255,180,0,0.3)] ${
                 s.filled
                   ? "bg-primary text-primary-foreground hover:brightness-110"
                   : "border border-primary text-primary hover:bg-primary hover:text-primary-foreground"

@@ -40,7 +40,7 @@ const Projects = () => (
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {projects.map((p, i) => (
           <ScrollReveal key={i} delay={i * 0.1}>
-            <div className="group relative rounded-xl overflow-hidden border border-border hover:border-primary transition-all duration-300 hover:-translate-y-1">
+            <div className="group relative rounded-xl overflow-hidden border border-border hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_30px_-5px_rgba(255,180,0,0.3)]">
               {/* Blurred construction-like bg */}
               <div className="absolute inset-0 bg-gradient-to-br from-card-elevated via-card to-background opacity-80" />
               <div className="absolute inset-0 backdrop-blur-sm" />
@@ -69,7 +69,7 @@ const Projects = () => (
 
       <ScrollReveal delay={0.3} className="text-center mt-10">
         <a
-          href="https://wa.me/"
+          href="https://wa.me/22955836540"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center px-6 py-3 border border-primary text-primary font-body font-semibold rounded-md hover:bg-primary hover:text-primary-foreground transition-all min-h-[44px] text-sm"
