@@ -24,7 +24,7 @@ export const translations = {
       title: "Je suis",
       name: "DAKO Clovisse",
       description: "Je m'appelle Clovisse DAKO, étudiant en 2ᵉ année de Génie Civil à l'INSTI Lokossa. Le BTP, c'est plus qu'une filière pour moi — c'est une façon de penser l'espace, de lire un terrain et d'imaginer ce qu'on peut y bâtir.",
-      quote: "\"Le numérique avant tout — parce que c'est là que tout commence aujourd'hui.\"",
+      quote: "\"Je veux concevoir des structures qui durent - et me rendre visible avant même d'être diplômé.\"",
       expertLabel: "Expertise BTP",
       expertTitle: "Génie Civil",
     },
