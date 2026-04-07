@@ -2,35 +2,19 @@ import ScrollReveal from "./ScrollReveal";
 import AnimatedProgressBar from "./AnimatedProgressBar";
 
 const ArchiCADLogo = () => (
-  <svg viewBox="0 0 80 80" className="w-16 h-16" fill="none">
-    <rect width="80" height="80" rx="12" fill="#E2132B"/>
-    <text x="50%" y="54%" dominantBaseline="middle" textAnchor="middle" fill="white" fontSize="28" fontWeight="bold" fontFamily="Arial, sans-serif">AC</text>
-  </svg>
+  <img src="/images/tools/archicad.png" alt="ArchiCAD Logo" className="w-16 h-16 object-contain" />
 );
 
 const RobotStructuralLogo = () => (
-  <svg viewBox="0 0 80 80" className="w-16 h-16" fill="none">
-    <rect width="80" height="80" rx="12" fill="#0696D7"/>
-    <text x="50%" y="40%" dominantBaseline="middle" textAnchor="middle" fill="white" fontSize="11" fontWeight="bold" fontFamily="Arial, sans-serif">ROBOT</text>
-    <text x="50%" y="65%" dominantBaseline="middle" textAnchor="middle" fill="white" fontSize="9" fontFamily="Arial, sans-serif">STRUCTURAL</text>
-  </svg>
+  <img src="/images/tools/robot.png" alt="Robot Structural Logo" className="w-16 h-16 object-contain" />
 );
 
 const RevitLogo = () => (
-  <svg viewBox="0 0 80 80" className="w-16 h-16" fill="none">
-    <rect width="80" height="80" rx="12" fill="#3E5DA8"/>
-    <text x="50%" y="54%" dominantBaseline="middle" textAnchor="middle" fill="white" fontSize="24" fontWeight="bold" fontFamily="Arial, sans-serif">Rv</text>
-  </svg>
+  <img src="/images/tools/revit.png" alt="Revit Logo" className="w-16 h-16 object-contain" />
 );
 
 const AutoCADLogo = () => (
-  <svg viewBox="0 0 80 80" className="w-16 h-16" fill="none">
-    <rect width="80" height="80" rx="12" fill="#0696D7"/>
-    <path d="M40 20 L22 55 L40 48 L58 55 Z" fill="white" opacity="0.2"/>
-    <path d="M40 20 L22 55 L40 48 L58 55 Z" stroke="white" strokeWidth="2.5" fill="none"/>
-    <line x1="28" y1="47" x2="52" y2="47" stroke="white" strokeWidth="2.5"/>
-    <text x="50%" y="80%" dominantBaseline="middle" textAnchor="middle" fill="white" fontSize="9" fontWeight="bold" fontFamily="Arial, sans-serif">AutoCAD</text>
-  </svg>
+  <img src="/images/tools/autocad.png" alt="AutoCAD Logo" className="w-16 h-16 object-contain" />
 );
 
 const tools = [
